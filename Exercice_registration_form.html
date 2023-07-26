@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :placeholder-shown {
+      font-size: 0.75rem;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .submit {
+      font-size: 0.6rem;
+    }
+  </style>
+</head>
+<body>
+  <form action="/action_page.php">
+    <h1>Registration Form</h1>
+    <hr>
+    <h4>Provide your information</h4>
+    <label for="name">Name*</label><br>
+    <input required id="name" type="text" placeholder="Name"><br>
+
+    <label for="email">Email*</label><br>
+    <input required class="email" type="email" placeholder="Email"><br>
+
+    <label for="telephone">Telephone</label><br>
+    <input id="telephone" type="text" maxlength="3" size="3" placeholder="555"> -
+    <input id="telephone" type="text" size="3" maxlength="3" placeholder="555"> - 
+    <input id="telephone" type="text" size="4" maxlength="4" placeholder="5555"><br><br><br>
+
+    <label for="DOB">DOB*</label><br>
+    <input  required id="DOB" type="date"><br>
+
+    <p>Gender</p>
+    <input name="gender" id="male" type="radio" value="male">
+    <label for="male">Male</label>
+    <input name="gender" id="female" type="radio" value="female">
+    <label for="female">Female</label>
+    <input name="gender" id="other" type="radio" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label for="household">Household size</label><br>
+    <input  required id="household" type="text" size="3"><br>
+
+    
+    <label for="income">Annual income:</label><br>
+      <select id="income" name="income">
+        <option value="poor">Less than $40k</option>
+        <option value="ok">Between $40k and $80k</option>
+        <option value="rich">Between $81k and $119k</option>
+        <option value="affluent">$120k or more</option>
+      </select><br><br>
+
+      <p><label for="Message">Message</label></p>
+      <textarea id="Message" name="Message" rows="3" cols="30" maxlength="500" placeholder="add message here..."></textarea>
+      <br><br>
+      <label for="password">Password*</label><br>
+      <input required id="password" type="password" placeholder="password"><br>
+      <label for="confirm_password">Confirm password*</label><br>
+      <input required id="confirm_password" type="password" placeholder="confirm password"><br><br>
+
+  <input type="checkbox" id="agreement" name="agreement" value="ok">
+  <label for="agreement"> By signing up, you agree to the <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html">Terms of service</a></label><br><br>
+
+
+    <input type="submit" class="submit" value="Submit">
+  </form>
+
+
+</body>
+</html>
